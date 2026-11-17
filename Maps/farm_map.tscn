@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://bfg265d7uc0x3"]
+
+[ext_resource type="Script" uid="uid://fcagvkcsa3ck" path="res://Scripts/Spawner.cs" id="1_hvs6p"]
+[ext_resource type="Script" uid="uid://ddlbd8tsa0pth" path="res://Scripts/LabelGen.cs" id="2_dbwxn"]
+
+[node name="FarmMap" type="Node2D"]
+
+[node name="Spawner" type="Node2D" parent="."]
+script = ExtResource("1_hvs6p")
+
+[node name="Label" type="Label" parent="."]
+offset_right = 340.0
+offset_bottom = 23.0
+text = "3"
+script = ExtResource("2_dbwxn")

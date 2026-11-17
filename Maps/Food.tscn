@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://djtsvuw4126h8"]
+
+[ext_resource type="Texture2D" uid="uid://plrc85a0c45r" path="res://SpritesUnti/food.png" id="1_6dald"]
+[ext_resource type="Script" uid="uid://bj7yljaaqxpwk" path="res://Scripts/Food.cs" id="1_v740r"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_v740r"]
+size = Vector2(2, 2)
+
+[node name="Food" type="Area2D"]
+scale = Vector2(3, 3)
+collision_layer = 2
+script = ExtResource("1_v740r")
+
+[node name="FoodCollision" type="CollisionShape2D" parent="."]
+scale = Vector2(1, 1.01074)
+shape = SubResource("RectangleShape2D_v740r")
+debug_color = Color(0.798189, 0, 0.0518824, 0.42)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.062, 0.062)
+texture = ExtResource("1_6dald")
+
+[connection signal="area_entered" from="." to="." method="PlayerCollide"]

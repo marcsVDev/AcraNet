@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://kyqtwbq488lm"]
+
+[ext_resource type="Texture2D" uid="uid://dpwmuac470h7n" path="res://SpritesUnti/cory.png" id="1_xbk4l"]
+
+[node name="Fish" type="Sprite2D"]
+position = Vector2(314, 129)
+texture = ExtResource("1_xbk4l")
